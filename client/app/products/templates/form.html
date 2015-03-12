@@ -1,0 +1,35 @@
+<form novalidate class="form row" name="form">
+  <div class="col-md-6">
+    <div class="form-group">
+      <input type="text" class="form-control"
+             placeholder="Name *"
+             ng-model="product.name" required>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control"
+             placeholder="Model *"
+             ng-model="product.model" required>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control"
+             placeholder="Manufacturer *"
+             ng-model="product.manufacturer" required>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <input type="text" class="form-control"
+             placeholder="Category"
+             ng-model="product.category">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control"
+             placeholder="Description"
+             ng-model="product.description">
+    </div>
+  </div>
+  <div class="col-md-12 text-right">
+    <button type="button" class="btn btn-danger" ng-click="remove()" ng-show="product._id">Delete</button>
+    <button type="submit" class="btn btn-success" ng-click="save()" ng-disabled="!form.$valid">Submit</button>
+  </div>
+</form>

@@ -1,0 +1,12 @@
+<div class="col-md-4 col-md-offset-4">
+  <div class="alert alert-danger" ng-show="message">{{message}}</div>
+  <form>
+    <div class="form-group">
+      <input type="email" class="form-control" placeholder="Email" ng-model="email"/>
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" placeholder="Password" ng-model="password"/>
+    </div>
+    <button class="btn btn-primary" ng-click="login()">Login</button>
+  </form>
+</div>

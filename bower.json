@@ -1,0 +1,18 @@
+{
+  "name": "meanimum",
+  "description": "Meanimum is my Mongo/Express/Angular/Node Boilerplate",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-route": "1.2.x",
+    "angular-loader": "1.2.x",
+    "angular-mocks": "1.2.x",
+    "bootstrap-sass-official": "3.3.3",
+    "angular-resource": "1.3.12",
+    "ngstorage": "0.3.0"
+  },
+  "resolutions": {
+    "angular": "1.2.28"
+  }
+}

@@ -1,0 +1,29 @@
+<div class="row filters" ng-hide="noProducts">
+  <div class="col-md-4">
+    <input type="text" ng-keyup="filterByCategory(category)"
+           ng-model="category"
+           class="form-control"
+           placeholder="Filter by Category"
+      />
+  </div>
+  <div class="col-md-4">
+    <input type="text" ng-keyup="filterByManufacturer(manufacturer)"
+           ng-model="manufacturer"
+           class="form-control"
+           placeholder="Filter by Manufacturer"
+      />
+  </div>
+  <div class="col-md-4">
+    <input type="text" ng-keyup="filterByModel(model)"
+           ng-model="model"
+           class="form-control"
+           placeholder="Filter by Model"
+      />
+  </div>
+</div>
+<div class="list-group">
+  <a class="list-group-item" ng-repeat="item in products" href="#/products/view/{{ item._id }}">{{ item.name }}</a>
+</div>
+<div class="h3" ng-show="noProducts">Nothing here. You may <a href="#/products/new">add</a> a Product.</div>
+<a class="btn btn-primary" href="#/products/new" ng-hide="noProducts">New</a>
+

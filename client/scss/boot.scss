@@ -1,0 +1,21 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+//$gray-base: #e3eca0 !default;
+$brand-primary: darken(#e3eca0, 6.5%) !default;
+// #337ab7
+$input-border-focus: $brand-primary;
+
+$font-size-base: 16px !default;
+
+$border-radius-base: 0;
+
+$input-border: #fff;
+
+$navbar-default-bg: #fff;
+$navbar-default-border: #fff;
+
+$grid-gutter-width: 10px !default;
+$container-large-desktop: (940px + $grid-gutter-width) !default;
+
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "main";
