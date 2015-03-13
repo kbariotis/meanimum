@@ -1,4 +1,4 @@
-#exercise.io
+#Meanimum
 [![Build Status](https://semaphoreci.com/api/v1/projects/9467354a-eec5-44c2-a528-cc2a5aca2432/372056/badge.png)](https://semaphoreci.com/kbariotis/meanimum)
 
 Node.js, Angular, Mongo, Express.
