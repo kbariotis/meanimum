@@ -2,7 +2,7 @@ var config = require('./config.global');
 
 config.env = 'test';
 
-config.version = '0.1';
+config.version = 'v1';
 
 config.host = 'http://localhost';
 config.path = '/' + config.version;

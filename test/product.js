@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 var config = require('../app/config');
 
 describe('Products', function () {
-	var url = 'http://localhost:9090/0.1';
+	var url = 'http://localhost:9090/v1';
 	var userToken = '';
 	var videoId = '';
 

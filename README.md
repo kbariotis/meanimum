@@ -20,20 +20,20 @@ Unit Testing using Jasmine, Mocha, Karma.
 ##API
 
 ###Auth Endpoints
-POST /0.1/auth/login
+POST /v1/auth/login
 
-POST /0.1/auth/register
+POST /v1/auth/register
 
 ###Products Endpoints
-GET /0.1/products
+GET /v1/products
 
-GET /0.1/products/:id
+GET /v1/products/:id
 
-POST /0.1/products
+POST /v1/products
 
-PUT /0.1/products/:id
+PUT /v1/products/:id
 
-DELETE /0.1/products/:id
+DELETE /v1/products/:id
 
 ##License
 [See here](https://github.com/kbariotis/meanimum/blob/master/LICENSE)
