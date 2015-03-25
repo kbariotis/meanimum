@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 var config = require('../app/config');
 
 describe('Main', function () {
-	var url = 'http://localhost:9090/0.1';
+	var url = 'http://localhost:9090/v1';
 
 	before(function (done) {
 		mongoose.connect(config.mongo.uri, function(){

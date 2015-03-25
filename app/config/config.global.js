@@ -4,7 +4,7 @@ config.env = 'test';
 
 config.secret_key = 'ThisIsWhatHappensWhenYouChooseDevForLiving';
 
-config.version = '0.1';
+config.version = 'v1';
 
 config.host = 'http://localhost';
 config.path = '/' + config.version;
