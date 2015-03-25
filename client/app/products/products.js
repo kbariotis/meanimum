@@ -26,7 +26,7 @@ angular.module('app.products', ['ngResource', 'ngRoute'])
 	.factory('Products', [
 		'$resource', function ($resource) {
 			return $resource(
-				'/0.1/products/:productId',
+				'/v1/products/:productId',
 				{
 					productId: '@id',
 					category: '@category',
