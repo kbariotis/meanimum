@@ -10,7 +10,7 @@ angular.module('app.auth', ['ngStorage'])
 			login: function (credentials) {
 				var deferred = $q.defer();
 
-				$http.post('/0.1/auth/login', credentials)
+				$http.post('/v1/auth/login', credentials)
 					.success(function (result) {
 						$localStorage.auth_token = result.token;
 						deferred.resolve(result.token);
@@ -29,7 +29,7 @@ angular.module('app.auth', ['ngStorage'])
 
 				delete $localStorage.auth_token;
 
-				$http.post('/0.1/auth/register', formData)
+				$http.post('/v1/auth/register', formData)
 					.success(function (result) {
 						$localStorage.auth_token = result.token;
 						deferred.resolve(result.token);
