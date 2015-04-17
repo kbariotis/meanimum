@@ -1,11 +1,10 @@
+if (!require('piping')()) { return; }
+
 var express = require('express'),
 	app = express(),
-	router = express.Router(),
 	bodyParser = require('body-parser'),
 	cfg = require('./app/config'),
 	port = cfg.port,
-	jwt = require('jsonwebtoken'),
-	migrate = require('./app/scripts/migrate')(),
 	mongoose = require('mongoose'),
 	winston = require('winston');
 
@@ -13,6 +12,8 @@ var express = require('express'),
  * INITIALIZATION
  */
 mongoose.connect(cfg.mongo.uri);
+
+require('./app/scripts/migrate')();
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
